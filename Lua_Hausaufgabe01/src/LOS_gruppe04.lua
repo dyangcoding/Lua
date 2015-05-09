@@ -27,7 +27,7 @@ function Class (t)
   
   local o = {_name = name, _attribut={}} -- local object
   
-  if(t[2] ~= nil) then
+  if(t[2] ~= nil) then    -- if the t do not contain any attributes 
   local attributes = t[2]
    
     for k,v in pairs[attributes] do
@@ -43,7 +43,7 @@ function Class (t)
   _G[name] = o
   setmetatable(o, _classmt)   
   
-  
+  -- function to create sub object 
   function o:create()
     local ob ={}
     setmetatable = {ob,self}

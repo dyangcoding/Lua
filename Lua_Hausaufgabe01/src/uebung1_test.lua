@@ -9,6 +9,7 @@
 require("LOS_gruppe04")
 
 
+-- uncomment the enum 
 
 -- Aufzählungstyp
 
