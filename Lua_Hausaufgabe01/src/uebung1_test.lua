@@ -9,10 +9,11 @@
 require("LOS_gruppe04")
 
 
+-- uncomment the enum 
 
 -- Aufzählungstyp
 
---Enum{ 'Gender', {'male', 'female', default = 'undetermined'} }
+Enum{ 'Gender', {'male', 'female', default = 'undetermined'} }
 
 
 
@@ -26,8 +27,9 @@ end
 
 
 kitty = Cat:create( )
+print(Cat:meow())
 kitty:meow()								--> Meow!
-print()
+print(kitty:meow())
 
 
 
